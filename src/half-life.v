@@ -2,7 +2,7 @@ module tt_um_halflife(clk, rst, up, down, load, in, out) ;
 parameter n = 4 ;
 input clk, rst, up ; 
   input [2:0] down ;
-  input [5:0] load ;
+  input [7:0] load ;
 input [n-1:0] in ;
 output [n-1:0] out ;
 wire [n-1:0] out1 ;
