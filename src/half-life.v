@@ -18,5 +18,5 @@ next: out1 = 4'b0001;
 default: next = out ;
 endcase
 end
-end module
+endmodule
 
