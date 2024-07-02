@@ -18,34 +18,36 @@ project:
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "project.v"
+    - "half-life.v"
+    
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
+  ui[0]: "in[0]"
+  ui[1]: "in[1]"
+  ui[2]: "in[2]"
+  ui[3]: "in[3]"
+  ui[4]: "up[4]"
+  ui[5]: "down[5]"
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
+  uo[0]: "out[0]"
+  uo[1]: "out[1]"
+  uo[2]: "out[2]"
+  uo[3]: "out[3]"
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
   uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
+  uio[0]: "load[0]"
+  uio[1]: "load[1]"
+  uio[2]: "load[2]"
+  uio[3]: "load[3]"
   uio[4]: ""
   uio[5]: ""
   uio[6]: ""
