@@ -20,8 +20,9 @@ module tt_um_example (
 
   assign uio_out = 0;
   assign uio_oe  = 0;
-  
+    assign ui_in[7:6] = 2'b00;
     assign uo_out[7:4] = 4'b0000;
+    assign uio_in[7:1] = 6'b000000;
 
     
 
@@ -33,7 +34,7 @@ module tt_um_example (
         .rst(rst_n),
         .up(ui_in[4]),
         .down(ui_in[5]),
-        .load(uio_in[3:0]),
+        .load(uio_in[0]),
         .in(ui_in[3:0]),
         .out(uo_out[3:0]))
         ;
