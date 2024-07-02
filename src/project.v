@@ -36,6 +36,6 @@ module tt_um_example (
         .load(uio_in[3:0]),
         .in(ui_in[3:0]),
         .out(uo_out[3:0]))
-        
+        ;
         
 endmodule
