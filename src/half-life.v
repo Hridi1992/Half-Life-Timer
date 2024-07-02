@@ -10,9 +10,9 @@ DFF #(n) count(clk, next, out) ;
 
 always@(rst, up, down, load, in, out) begin
 casex({rst, up, down, load})
-4'blxxx: next = {n{1'b0}} ;
-4'b01xx: next = out + 1'bl ;
-4'b001x: next = out - 1'b1 ;
+4'bl000: next = {n{1'b0}} ;
+4'b0100: next = out + 1'bl ;
+4'b0010: next = out - 1'b1 ;
 4,b0001: next = in ;
 default: next = out ;
 endcase
