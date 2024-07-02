@@ -7,7 +7,7 @@ input [n-1:0] in ;
 output [n-1:0] out ;
 wire [n-1:0] out ;
   reg [n-1:0] next ;
-  wire [10:0] cs ;
+  wire [12:0] cs ;
 
   DFF #(n) count(next, clk, out) ;
 
