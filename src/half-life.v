@@ -1,4 +1,4 @@
-module tt_um_halflife(clk, rst, up, down, load, in, out) ;
+module tt_um_halflife(clk, rst, up, down, load, in, out, cs) ;
 parameter n = 4 ;
 input clk, rst, up ; 
   input [2:0] down ;
