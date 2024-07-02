@@ -6,7 +6,7 @@ output [n-1:0] out ;
 wire [n-1:0] out1 ;
 reg [n-1:0] next ;
 
-DFF #(n) count(clk, next, out) ;
+  DFF #(n) count(next, clk, out) ;
 
 always@(rst, up, down, load, in, out) begin
 casex({rst, up, down, load})
