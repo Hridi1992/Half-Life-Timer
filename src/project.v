@@ -20,9 +20,9 @@ module tt_um_example (
 
   assign uio_out = 0;
   assign uio_oe  = 0;
-    assign ui_in[7:6] = 2b'00;
-    assign ui_out[7:4] = 4b'0000;
-    assign uio_in[7:4] = 4b'0000;
+    assign ui_in[7:6] = 2'b00;
+    assign ui_out[7:4] = 4'b0000;
+    assign uio_in[7:4] = 4'b0000;
     
 
   // List all unused inputs to prevent warnings
