@@ -1,4 +1,4 @@
-module UDL_Count1(clk, rst, up, down, load, in, out) ;
+module tt_um_half-life(clk, rst, up, down, load, in, out) ;
 parameter n = 4 ;
 input clk, rst, up, down, load ;
 input [n-1:0] in ;
