@@ -18,7 +18,7 @@
   else if (up) 
    next = out + 1; 
   else if (down) 
-   next = out - 1; 
+   next = out-1; 
   else 
    next = out;  
  end  
