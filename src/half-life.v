@@ -16,9 +16,9 @@
   else if (load) 
    next = in; 
   else if (up) 
-   next = out + 1’b1; 
+   next = out + 1; 
   else if (down) 
-   next = out – 1’b1; 
+   next = out – 1; 
   else 
    next = out;  
  end  
