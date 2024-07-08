@@ -20,11 +20,14 @@ module tt_um_example (
 
   assign uio_out = 0;
   assign uio_oe  = 0;
-    //assign ui_in[7:6] = 2'b00;
+   //assign ui_in[6:5] = 2'b00;
    // assign uo_out[7:4] = 4'b0000;
-    //assign uio_in[7:1] = 6'b000000;
-
+    assign uo_out[7:1] = 6'b000000;
     
+    wire [6:0] hridi;
+    assign hridi = uio_in[7:1];
+    wire [1:0] zach;
+    assign zach = ui_in[6:5];
 
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, clk, rst_n, 1'b0};
@@ -33,10 +36,10 @@ module tt_um_example (
         .clk(clk),
         .rst(rst_n),
         .up(ui_in[4]),
-        .down(ui_in[7:5]),
-        .load(uio_in[7:0]),
+        .down(ui_in[7]),
+        .load(uio_in[0]),
         .in(ui_in[3:0]),
-        .out(uo_out[7:0])
+        .out(uo_out[0])
     )
 
         ;
