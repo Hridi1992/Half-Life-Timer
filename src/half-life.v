@@ -8,7 +8,7 @@
  //wire [n-1:0] out ;  
  reg [n-1:0] next ;  
  
- DFF #(n) count(clk, next, out) ;  
+  DFF #(n) count(next, clk, out) ;  
  
  always@(*) begin  
   if (rst)  
