@@ -14,12 +14,14 @@
   if (rst)  
    next = 0; 
   else if (load) 
-   next = in; 
+   //next = in;
+   next = 4'h0;
   else if (up) 
    //next = out + 1; 
    next = out;
   else if (down) 
-   next = out-1; 
+   //next = out-1;
+   next=out;
   else 
    next = out;  
  end  
