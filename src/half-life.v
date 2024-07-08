@@ -12,7 +12,7 @@
  
  always@(*) begin  
   if (rst)  
-   next = {n{1’b0}}; 
+   next = {4{1’b0}}; 
   else if (load) 
    next = in; 
   else if (up) 
