@@ -12,7 +12,7 @@
  
  always@(*) begin  
   if (rst)  
-   next = 4’b0000; 
+   next = 0; 
   else if (load) 
    next = in; 
   else if (up) 
