@@ -22,7 +22,7 @@ module tt_um_example (
   assign uio_oe  = 0;
    //assign ui_in[6:5] = 2'b00;
    // assign uo_out[7:4] = 4'b0000;
-    assign uo_out[7:1] = 7'b0000000;
+    assign uo_out[7:4] = 4'b0000;
     
     wire [6:0] hridi;
     assign hridi = uio_in[7:1];
@@ -39,7 +39,7 @@ module tt_um_example (
         .down(ui_in[7]),
         .load(uio_in[0]),
         .in(ui_in[3:0]),
-        .out(uo_out[0])
+        .out(uo_out[3:0])
     )
 
         ;
